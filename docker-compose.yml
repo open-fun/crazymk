@@ -1,0 +1,13 @@
+version: '3'
+services:
+  crazymk_build:
+    image: swipl/swipl
+    volumes:
+      - .:/workspace
+    entrypoint: sh /workspace/scripts/build_binary.sh
+
+  crazymk_run:
+    image: swipl/swipl
+    volumes:
+      - ./bin:/app
+    entrypoint: sh /app/run.sh
