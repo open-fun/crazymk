@@ -1,4 +1,4 @@
 #!/bin/sh
 cd "${0%/*}"
-echo "Starting application form ${pwd}\n\n"
+echo "Starting application...\n\n"
 ./crazymk
